@@ -1,0 +1,8 @@
+class GroupsController < application
+
+def destroy
+  @group = Group.find(params[:id])
+
+     @gorup.destroy
+     redirect_to groups_path, alert: 'Group Deleted'
+     end 
